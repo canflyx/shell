@@ -22,9 +22,7 @@ testUrl=https://apple.freecdn.workers.dev/105/media/us/iphone-11-pro/2019/3bd902
 testDoman=apple.freecdn.workers.dev
 #time=日志时间戳，workDir=工作目录，v2Dir=v2目录，defaultSpeed=默认需要达到的速度，num=ping测试次数，interval=ping中间间隔,saveIp=ping测试后保留的IP地址数量。测试后速度快的IP地址保留15个
 #对IP进行测试10S并输出速度
-if [ ! -d $workDir ]; then
-    mkdir -p $workDir
-fi
+
 function UrlTest()
 {
     echo `curl -w %{speed_download} --resolve $testDomain:$1 $testUrl -o /dev/null -s --connect-timeout 2 --max-time 10`  / 131072.000 | bc 

@@ -6,6 +6,9 @@ defaultSpeed=70
 num=100
 interval=0
 saveIp=100
+if [ ! -d $workDir ]; then
+    mkdir -p $workDir
+fi
 cd $workDir
 function rand(){
        min=$1
