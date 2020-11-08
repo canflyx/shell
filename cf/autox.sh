@@ -1,5 +1,6 @@
 #!/bin/bash
 #v0.11-2020-06-24
+#https://github.com/canflyx/shell/
 #0.12 change file test to "test -s $workDir/bestip.txt "
 #1.check system
 # check root
