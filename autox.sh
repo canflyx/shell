@@ -46,7 +46,7 @@ num=100
 interval=0
 saveIp=100
 v2Ip=$(sed -n '/address/'p $v2Dir/config.json | awk -F "\"" '{print $4}')
-testUrl=https://apple.freecdn.workers.dev/105/media/us/iphone-11-pro/2019/3bd902e4-0752-4ac1-95f8-6225c32aec6d/films/product/iphone-11-pro-product-tpl-cc-us-2019_1280x720h.mp4
+testUrl=https://cf.xiu2.xyz/Github/CloudflareSpeedTest.png
 testDoman=apple.freecdn.workers.dev
 if test -s v2Dir/config.json; then
     v2Ip=$(sed -n '/address/'p $v2Dir/config.json | awk -F "\"" '{print $4}')
